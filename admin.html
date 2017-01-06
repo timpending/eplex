@@ -13,26 +13,6 @@
 </head>
 
 <body>
-  <!-- <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-      </ul>
-    </div>
-  </nav> -->
-
-
     <!-- Start Side Nav -->
     <aside>
         <ul id="slide-out" class="side-nav">
@@ -99,7 +79,7 @@
                 <div class="row center">
                     <div class="col s6 m4 l2">
                         <div class="card center">
-                            <span class="card-title"><i class="material-icons blue-text text-lighten-4">language</i>X1</span>
+                            <span class="card-title"><i class="center material-icons blue-text text-lighten-4">language</i>X1</span>
                             <div class="card-action center">
                                 <h5>$50</h5>
                                 PER MONTH
@@ -108,7 +88,7 @@
                     </div>
                     <div class="col s6 m4 l2">
                         <div class="card center">
-                            <span class="card-title"><i class="material-icons blue-text text-lighten-2">language</i>X2</span>
+                            <span class="card-title"><i class="center material-icons blue-text text-lighten-2">language</i>X2</span>
                             <div class="card-action center">
                                 <h5>$70</h5>
                                 PER MONTH
@@ -117,7 +97,7 @@
                     </div>
                     <div class="col s6 m4 l2">
                         <div class="card center">
-                            <span class="card-title"><i class="material-icons blue-text">language</i>X3</span>
+                            <span class="card-title"><i class="center material-icons blue-text">language</i>X3</span>
                             <div class="card-action center">
                                 <h5>$200</h5>
                                 PER MONTH
@@ -126,7 +106,7 @@
                     </div>
                     <div class="col s6 m4 l2">
                         <div class="card center">
-                            <span class="card-title"><i class="material-icons blue-text text-darken-2">language</i>X4</span>
+                            <span class="card-title"><i class="center material-icons blue-text text-darken-2">language</i>X4</span>
                             <div class="card-action center">
                                 <h5>$240</h5>
                                 PER MONTH
@@ -135,7 +115,7 @@
                     </div>
                     <div class="col s6 m4 l2">
                         <div class="card center">
-                            <span class="card-title"><i class="material-icons blue-text text-darken-4">language</i>X5</span>
+                            <span class="card-title"><i class="center material-icons blue-text text-darken-4">language</i>X5</span>
                             <div class="card-action center">
                                 <h5>$400</h5>
                                 PER MONTH
@@ -154,7 +134,7 @@
                         <label for="cloud-equiv">Public Cloud Equivalent Size</label>
                     </div>
                     <div class="input-field col s6">
-                        <select id="cloud-equiv-size">
+                      <select id="cloud-equiv-size">
                       <option value="" disabled selected>Select a Size</option>
                       <option value="1">m4.xlarge 1</option>
                       <option value="2">m4.xlarge 2</option>
@@ -169,15 +149,25 @@
                 <h5>3. Governance</h5>
                 <p>Select which cloud platform you'd like this server to live on.<br>The server will consume resources from that cloud platform.</p>
                 <div class="row">
+                  <div class="agent input-field col s6">
+                    <select id="governance">
+                    <option value="" disabled selected>Select a Governance</option>
+                    <option value="25-instances">25 Instances</option>
+                    <option value="50-instances">50 Instances</option>
+                  </select>
+                      <label for="governance"></label>
+                  </div>
+                </div>
+                <div class="row">
                     <div class="col s5">
-                        <div class="card-panel">
-                            <div class="card-title center"><i class="material-icons blue-text">language</i>Amazon Web Services</div>
+                        <div class="agent-a-card card-panel">
+                            <div class="card-title center"><i class="center material-icons blue-text">language</i>Amazon Web Services</div>
                             <p>Total Budget <span class="right">Total Instances</span></p>
                             <p>$250/month <span class="right">25</span></p>
                         </div>
                     </div>
                     <div class="col s5">
-                        <div class="card-panel">
+                        <div class="agent-b-card card-panel">
                             <div class="card-title center"><i class="material-icons blue-text">language</i>Amazon Web Services</div>
                             <p>Total Budget <span class="right">Total Instances</span></p>
                             <p>$500/month <span class="right">50</span></p>
@@ -185,11 +175,40 @@
                     </div>
                 </div>
                 <div class="row">
-                  <div class="col s6">
-                    <p>Available Clouds</p>
-                    <p>BOX HERE</p>
+                  <div class="col s8 agent-enabled">
+
                   </div>
                 </div>
+              <div class="row">
+                <div class="agent-a hidden col s12">
+                  <div class="btn blue white-text lighten-3">
+                    <input type="checkbox" id="agent-a-item1" />
+                    <label class="white-text" for="agent-a-item1">Agent A Item 1</label>
+                  </div>
+                  <div class="btn blue white-text lighten-3">
+                    <input type="checkbox" id="agent-a-item2" />
+                    <label class="white-text" for="agent-a-item2">Agent A Item 2</label>
+                  </div>
+                  <div class="btn blue white-text lighten-3">
+                    <input type="checkbox" id="agent-a-item3" />
+                    <label class="white-text" for="agent-a-item3">Agent A Item 3</label>
+                  </div>
+                </div>
+                <div class="agent-b hidden col s12">
+                  <div class="btn blue white-text">
+                    <input type="checkbox" id="agent-b-item1" />
+                    <label class="white-text" for="agent-b-item1">Agent B Item 1</label>
+                  </div>
+                  <div class="btn blue white-text">
+                    <input type="checkbox" id="agent-b-item2" />
+                    <label class="white-text" for="agent-b-item2">Agent B Item 2</label>
+                  </div>
+                  <div class="btn blue white-text">
+                    <input type="checkbox" id="agent-b-item3" />
+                    <label class="white-text" for="agent-b-item3">Agent B Item 3</label>
+                  </div>
+                </div>
+              </div>
                 <div class="row">
                   <div class="col s6">
                     <p>INSERT TOGGLE OPTIONS HERE</p>
@@ -203,11 +222,11 @@
                 <div class="row">
                 <div class="input-field col s6">
                     <select id="assoc-org">
-            <option value="" disabled selected>Select an Organization</option>
-            <option value="1">ABC Corp</option>
-            <option value="2">DEF Corp</option>
-            <option value="3">GHI Corp</option>
-          </select>
+                      <option value="" disabled selected>Select an Organization</option>
+                      <option value="1">ABC Corp</option>
+                      <option value="2">DEF Corp</option>
+                      <option value="3">GHI Corp</option>
+                    </select>
                     <label for="assoc-org">Associate Organization</label>
                 </div>
               </div>

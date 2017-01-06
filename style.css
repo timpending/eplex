@@ -11,6 +11,10 @@ html {
   position:absolute;
   bottom: 0;
 }
+
+.hidden {
+  display: none;
+}
 /* END UTILITY CLASS */
 
 
@@ -37,6 +41,12 @@ html {
 };
 /* END SIDE NAV */
 
+.agent-enabled {
+  background-color: orange !important;
+}
+
+
+
 /* START FORM COLOR SELECTIONS */
 input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
   border-bottom: 1px solid rgba(33, 150, 243, 1);
@@ -48,4 +58,9 @@ input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]),
 .switch label input[type=checkbox]:checked+.lever,
 .switch label input[type=checkbox]:checked+.lever:after {
   background-color: #F1F1F1;
+}
+
+[type="checkbox"]:checked+label:before {
+  border-right: 2px solid #5a5a5a;
+  border-bottom: 2px solid #5a5a5a;
 }
