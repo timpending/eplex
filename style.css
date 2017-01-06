@@ -32,3 +32,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]),
 .dropdown-content li>a, .dropdown-content li>span {
   color: rgba(33, 150, 243, 1);
 }
+.switch label input[type=checkbox]:checked+.lever,
+.switch label input[type=checkbox]:checked+.lever:after {
+  background-color: #F1F1F1;
+}
