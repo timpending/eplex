@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>EPXY Code Challenge</title>
+    <!-- TODO: add Favicon -->
+    <!-- <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' /> -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css" media="screen,projection" />
+</head>
+
+<body>
+    <!-- Start Side Nav -->
+    <aside>
+        <ul id="slide-out" class="side-nav">
+            <!-- TODO: Update Header -->
+            <li class="menu-header"><a class="header"><i class="material-icons">menu</i>EPXY DEMO</a></li>
+            <br />
+            <li><a class="subheader">MAIN</a></li>
+            <li><a href="index.html" class="waves-effect"><i class="blue-text material-icons">timeline</i>SUMMARY</a></li>
+            <li><a href="#!" class="waves-effect grey-text lighten-3"><i class="blue-text material-icons">language</i>SERVERS</a></li>
+            <li><a href="#!" class="waves-effect grey-text lighten-3"><i class="blue-text material-icons">wifi_tethering</i>NETWORK</a></li>
+            <li><a href="#!" class="waves-effect grey-text lighten-3"><i class="blue-text material-icons">star_border</i>TASKS</a></li>
+            <li><a href="#!" class="waves-effect grey-text lighten-3"><i class="blue-text material-icons">store</i>MARKETPLACE</a></li>
+            <br />
+            <li><a class="subheader">ADMINISTRATION</a></li>
+            <li class="active"><a href="admin.html" class="waves-effect"><i class="blue-text material-icons">vpn_key</i>ADMINISTRATION</a></li>
+            <br />
+
+            <li class="bottom">
+                <div class="userView">
+                    <a href="#!user"><img class="circle inline" src="images/tim.jpg"></a>
+                    <a href="#!name"><span class="text name">Tim Pender</span></a>
+                    <a href="#!email"><span class="text email">timpending@gmail.com</span></a>
+                </div>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- Menu Activation Button -->
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+    <!-- End Side Nav -->
+    <div class="container">
+        <header>
+            <h3><i class="small blue-text material-icons">language</i>Add Provider Plan</h3></header>
+        <hr>
+        <form>
+            <section>
+                <h5>1. Provider Plan Name</h5>
+                <p>This name will be used throughout the EPLX interface. We recommend keeping it short and sweet, so that it's easy to identify in the future.</p>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label for="plan-name">Provider Plan Name</label>
+                        <input placeholder="Thunderbolt" type="text" name="plan-name" id="plan-name" />
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h5>2. Choose Provider Backing</h5>
+                <p>This will determine how much of the cloud platform this server lives on will consume.<br>If you choose a server that's smaller than the cloud platform it lives on, we'll bump up the size of you cloud platform to handle it.</p>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <!-- TODO: dynamically adjust selected card based on the option w/in dropdown -->
+                        <select>
+                      <option value="" disabled selected>Server Size Backing</option>
+                      <option value="x1">X1</option>
+                      <option value="x2">X2</option>
+                      <option value="x3">X3</option>
+                      <option value="x4">X4</option>
+                      <option value="x5">X5</option>
+                    </select>
+                        <label for="compute-backing">Provider Compute Backing</label>
+                    </div>
+                </div>
+                <div class="row center">
+                    <div class="col s6 m4 l2">
+                        <div class="card center">
+                            <span class="card-title"><i class="material-icons blue-text text-lighten-4">language</i>X1</span>
+                            <div class="card-action center">
+                                <h5>$50</h5>
+                                PER MONTH
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6 m4 l2">
+                        <div class="card center">
+                            <span class="card-title"><i class="material-icons blue-text text-lighten-2">language</i>X2</span>
+                            <div class="card-action center">
+                                <h5>$70</h5>
+                                PER MONTH
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6 m4 l2">
+                        <div class="card center">
+                            <span class="card-title"><i class="material-icons blue-text">language</i>X3</span>
+                            <div class="card-action center">
+                                <h5>$200</h5>
+                                PER MONTH
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6 m4 l2">
+                        <div class="card center">
+                            <span class="card-title"><i class="material-icons blue-text text-darken-2">language</i>X4</span>
+                            <div class="card-action center">
+                                <h5>$240</h5>
+                                PER MONTH
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6 m4 l2">
+                        <div class="card center">
+                            <span class="card-title"><i class="material-icons blue-text text-darken-4">language</i>X5</span>
+                            <div class="card-action center">
+                                <h5>$400</h5>
+                                PER MONTH
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <select>
+                    <option value="" disabled selected>AWS Cloud Sized</option>
+                    <option value="1">AWS Size 1</option>
+                    <option value="2">AWS Size 2</option>
+                    <option value="3">AWS Size 3</option>
+                  </select>
+                        <label for="compute-backing">Public Cloud Equivalent Size</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <select>
+                      <option value="" disabled selected>m4.xlarge</option>
+                      <option value="1">m4.xlarge 1</option>
+                      <option value="2">m4.xlarge 2</option>
+                      <option value="3">m4.xlarge 3</option>
+                    </select>
+                        <label for="compute-backing">Cloud Sized</label>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h5>3. Governance</h5>
+                <p>Select which cloud platform you'd like this server to live on.<br>The server will consume resources from that cloud platform.</p>
+                <div class="row">
+                    <div class="col s5">
+                        <div class="card-panel">
+                            <div class="card-title center"><i class="material-icons blue-text">language</i>Amazon Web Services</div>
+                            <p>Total Budget <span class="right">Total Instances</span></p>
+                            <p>$250/month <span class="right">25</span></p>
+                        </div>
+                    </div>
+                    <div class="col s5">
+                        <div class="card-panel">
+                            <div class="card-title center"><i class="material-icons blue-text">language</i>Amazon Web Services</div>
+                            <p>Total Budget <span class="right">Total Instances</span></p>
+                            <p>$500/month <span class="right">50</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col s6">
+                    <p>Available Clouds</p>
+                    <p>BOX HERE</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s6">
+                    <p>INSERT TOGGLE OPTIONS HERE</p>
+                  </div>
+                </div>
+            </section>
+
+            <section>
+                <h5>4. Associate Organization</h5>
+                <p>Select an associate organziation that your cloud platform currently lives on.</p>
+                <div class="row">
+                <div class="input-field col s6">
+                    <select>
+            <option value="" disabled selected>Select an Organization</option>
+            <option value="1">ABC Corp</option>
+            <option value="2">DEF Corp</option>
+            <option value="3">GHI Corp</option>
+          </select>
+                    <label for="ao-select">Associate Organization</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="ao-description" class="materialize-textarea" placeholder="My Provider Plan for ABC Corp"></textarea>
+                    <label for="ao-description">Description</label>
+                </div>
+              </div>
+            </section>
+
+            <section>
+                <h5>5. Partner</h5>
+                <p>This will determine how much of the cloud platform this server lives on.<br>If you choose a server that's smaller than the cloud platform it lives on, we'll bump up the size of your cloud platform to handle it. </p>
+                <div class="row">
+                <div class="input-field col s6">
+                <select>
+                  <option value="" disabled selected>Select a Partner</option>
+                  <option value="1">Partner 1</option>
+                  <option value="2">Partner 2</option>
+                  <option value="3">Partner 3</option>
+                </select>
+                <label for="partner-compute-backing">Partner Compute Backing</label>
+              </div>
+            </div>
+            <div class="row">
+            <div class="input-field col s6">
+                <select>
+            <option value="" disabled selected>Select Partner Add-On Fee</option>
+            <option value="1">AWS 1</option>
+            <option value="2">AWS 2</option>
+            <option value="3">AWS 3</option>
+          </select>
+                <label for="ao-select">Select Partner Add-On Fee</label>
+              </div>
+              <div class="input-field col s6">
+                <label for="partner-fee">Fee %</label>
+                <input placeholder="20" id="partner-fee" type="number" min="0" max="100" class="validate">
+              </div>
+                <a href="#!"><i class="blue-text material-icons">add_circle</i>Select Another Partner Fee</a>
+              </div>
+            </section>
+
+            <section>
+                <h5>6. Marketplace</h5>
+                <p>This will determine how much of the cloud platform this server lives on.<br>If you choose a server that's smaller than the cloud platform it lives on, we'll bump up the size of your cloud platform to handle it. </p>
+
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-subheader grey-text lighten-3">Item Name</span>
+                            </div>
+                            <div class="card-action">
+                                <ul>
+                                    <li><strong>Item 1</strong><span class="grey-text lighten-3"> / Catalog 1</span> <span class="right">
+                                    <div class="switch">
+                                    <label for="catalog1">
+                                      Off
+                                      <input id="catalog1" type="checkbox">
+                                      <span class="lever blue"></span> On
+                                        </label>
+                            </div>
+                            </span>
+                            </li>
+                            <hr>
+                            <li><strong>Item 2</strong><span class="grey-text lighten-3"> / Catalog 3</span> <span class="right">
+                                    <div class="switch">
+                                    <label for="catalog2">
+                                      Off
+                                      <input id="catalog2" type="checkbox">
+                                      <span class="lever blue"></span> On
+                                </label>
+                        </div>
+                        </span>
+                        </li>
+                        <hr>
+                        <li><strong>Item 3</strong><span class="grey-text lighten-3"> / Catalog 3</span> <span class="right">
+                                  <div class="switch">
+                                    <label for="catalog3">
+                                      Off
+                                      <input id="catalog3" type="checkbox">
+                                      <span class="lever blue"></span> On
+                            </label>
+                    </div>
+                    </span>
+                    </li>
+                    </ul>
+                </div>
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <hr>
+    <div class="row">
+      <div class="col s12">
+        <div class="right">
+          <a class="waves-effect waves-light btn grey lighten-2">Cancel</a> <a class="waves-effect waves-light btn yellow darken-2 white-text">Submit</a>
+        </div>
+      </div>
+    </div>
+    </form>
+    </div>
+    <!-- SCRIPT REQUIREMENTS-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
