@@ -28,6 +28,7 @@
             <br />
             <li><a class="subheader">ADMINISTRATION</a></li>
             <li class="active"><a href="admin.html" class="waves-effect"><i class="blue-text material-icons">vpn_key</i>ADMINISTRATION</a></li>
+
             <br />
 
             <li class="bottom">
@@ -65,7 +66,7 @@
                 <div class="row">
                     <div class="input-field col s6">
                         <!-- TODO: dynamically adjust selected card based on the option w/in dropdown -->
-                        <select>
+                    <select id="compute-backing">
                       <option value="" disabled selected>Server Size Backing</option>
                       <option value="x1">X1</option>
                       <option value="x2">X2</option>
@@ -125,22 +126,22 @@
                 </div>
                 <div class="row">
                     <div class="input-field col s6">
-                        <select>
-                    <option value="" disabled selected>AWS Cloud Sized</option>
-                    <option value="1">AWS Size 1</option>
-                    <option value="2">AWS Size 2</option>
-                    <option value="3">AWS Size 3</option>
-                  </select>
-                        <label for="compute-backing">Public Cloud Equivalent Size</label>
+                        <select id="cloud-equiv">
+                          <option value="" disabled selected>AWS Cloud Sized</option>
+                          <option value="1">AWS Size 1</option>
+                          <option value="2">AWS Size 2</option>
+                          <option value="3">AWS Size 3</option>
+                        </select>
+                        <label for="cloud-equiv">Public Cloud Equivalent Size</label>
                     </div>
                     <div class="input-field col s6">
-                        <select>
-                      <option value="" disabled selected>m4.xlarge</option>
+                        <select id="cloud-equiv-size">
+                      <option value="" disabled selected>Select a Size</option>
                       <option value="1">m4.xlarge 1</option>
                       <option value="2">m4.xlarge 2</option>
                       <option value="3">m4.xlarge 3</option>
                     </select>
-                        <label for="compute-backing">Cloud Sized</label>
+                        <label for="cloud-equiv-size">Cloud Sized</label>
                     </div>
                 </div>
             </section>
@@ -182,18 +183,18 @@
                 <p>Select an associate organziation that your cloud platform currently lives on.</p>
                 <div class="row">
                 <div class="input-field col s6">
-                    <select>
+                    <select id="assoc-org">
             <option value="" disabled selected>Select an Organization</option>
             <option value="1">ABC Corp</option>
             <option value="2">DEF Corp</option>
             <option value="3">GHI Corp</option>
           </select>
-                    <label for="ao-select">Associate Organization</label>
+                    <label for="assoc-org">Associate Organization</label>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                    <textarea id="ao-description" class="materialize-textarea" placeholder="My Provider Plan for ABC Corp"></textarea>
+                    <textarea id="assoc-org-desc" class="materialize-textarea" placeholder="My Provider Plan for ABC Corp"></textarea>
                     <label for="ao-description">Description</label>
                 </div>
               </div>
@@ -204,28 +205,28 @@
                 <p>This will determine how much of the cloud platform this server lives on.<br>If you choose a server that's smaller than the cloud platform it lives on, we'll bump up the size of your cloud platform to handle it. </p>
                 <div class="row">
                 <div class="input-field col s6">
-                <select>
+                <select id="partner-compute">
                   <option value="" disabled selected>Select a Partner</option>
                   <option value="1">Partner 1</option>
                   <option value="2">Partner 2</option>
                   <option value="3">Partner 3</option>
                 </select>
-                <label for="partner-compute-backing">Partner Compute Backing</label>
+                <label for="partner-compute">Partner Compute Backing</label>
               </div>
             </div>
             <div class="row">
             <div class="input-field col s6">
-                <select>
+                <select id="partner-add-on">
             <option value="" disabled selected>Select Partner Add-On Fee</option>
             <option value="1">AWS 1</option>
             <option value="2">AWS 2</option>
             <option value="3">AWS 3</option>
           </select>
-                <label for="ao-select">Select Partner Add-On Fee</label>
+                <label for="partner-add-on">Select Partner Add-On Fee</label>
               </div>
               <div class="input-field col s6">
-                <label for="partner-fee">Fee %</label>
-                <input placeholder="20" id="partner-fee" type="number" min="0" max="100" class="validate">
+                <label for="partner-add-on-fee">Fee %</label>
+                <input placeholder="20" id="partner-add-on-fee" type="number" min="0" max="100" class="validate">
               </div>
                 <a href="#!"><i class="blue-text material-icons">add_circle</i>Select Another Partner Fee</a>
               </div>
@@ -286,7 +287,7 @@
     <div class="row">
       <div class="col s12">
         <div class="right">
-          <a class="waves-effect waves-light btn grey lighten-2">Cancel</a> <a class="waves-effect waves-light btn yellow darken-2 white-text">Submit</a>
+          <a href="#!" id="cancel" class="waves-effect waves-light btn grey lighten-2">Cancel</a> <a id="submit" class="waves-effect waves-light btn yellow darken-2 white-text">Submit</a>
         </div>
       </div>
     </div>
