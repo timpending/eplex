@@ -1,5 +1,5 @@
 html {
-  background-color: lightgreen;
+  background-color: rgba(251, 251, 251, 1);
 }
 
 /* UTILITY CLASS START */
@@ -23,3 +23,12 @@ html {
     background-color: rgba(33, 150, 243, .1);
 }
 /* END SIDE NAV */
+
+/* START FORM COLOR SELECTIONS */
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid rgba(33, 150, 243, 1);
+  box-shadow: 0 1px 0 0 rgba(33, 150, 243, 1);
+}
+.dropdown-content li>a, .dropdown-content li>span {
+  color: rgba(33, 150, 243, 1);
+}

@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Eplexity Code Challenge</title>
+    <title>EPXY Code Challenge</title>
     <!-- TODO: add Favicon -->
     <!-- <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' /> -->
 
@@ -12,37 +12,93 @@
   </head>
   <body>
     <!-- Start Side Nav -->
-    <ul id="slide-out" class="side-nav">
-      <li class="menu-header"><a class="subheader"><i class="material-icons">menu</i>EXPLEXITY</a></li>
-      <br />
-      <li><a class="subheader">MAIN</a></li>
-      <li><a href="#!" class="waves-effect"><i class="blue-text material-icons">timeline</i>SUMMARY</a></li>
-      <li><a href="#!" class="waves-effect"><i class="blue-text material-icons">language</i>SERVERS</a></li>
-      <li><a href="#!" class="waves-effect"><i class="blue-text material-icons">wifi_tethering</i>NETWORK</a></li>
-      <li><a href="#!" class="waves-effect"><i class="blue-text material-icons">star_border</i>TASKS</a></li>
-      <li><a href="#!" class="waves-effect"><i class="blue-text material-icons">store</i>MARKETPLACE</a></li>
-      <br />
-      <li><a class="subheader">ADMINISTRATION</a></li>
-      <li class="active"><a href="#!" class="waves-effect"><i class="blue-text material-icons">vpn_key</i>ADMINISTRATION</a></li>
-      <br />
+    <aside>
+      <ul id="slide-out" class="side-nav">
+          <!-- TODO: Update Header -->
+        <li class="menu-header"><a class="header"><i class="material-icons">menu</i>EPXY DEMO</a></li>
+        <br />
+        <li><a class="subheader">MAIN</a></li>
+        <li><a href="#!" class="waves-effect"><i class="blue-text material-icons">timeline</i>SUMMARY</a></li>
+        <li><a href="#!" class="waves-effect"><i class="blue-text material-icons">language</i>SERVERS</a></li>
+        <li><a href="#!" class="waves-effect"><i class="blue-text material-icons">wifi_tethering</i>NETWORK</a></li>
+        <li><a href="#!" class="waves-effect"><i class="blue-text material-icons">star_border</i>TASKS</a></li>
+        <li><a href="#!" class="waves-effect"><i class="blue-text material-icons">store</i>MARKETPLACE</a></li>
+        <br />
+        <li><a class="subheader">ADMINISTRATION</a></li>
+        <li class="active"><a href="#!" class="waves-effect"><i class="blue-text material-icons">vpn_key</i>ADMINISTRATION</a></li>
+        <br />
 
-      <li class="bottom">
-        <div class="userView">
-          <a href="#!user"><img class="circle inline" src="images/tim.jpg"></a>
-          <a href="#!name"><span class="text name">Tim Pender</span></a>
-          <a href="#!email"><span class="text email">timpending@gmail.com</span></a>
-        </div>
-      </li>
-
-    </ul>
+        <li class="bottom">
+          <div class="userView">
+            <a href="#!user"><img class="circle inline" src="images/tim.jpg"></a>
+            <a href="#!name"><span class="text name">Tim Pender</span></a>
+            <a href="#!email"><span class="text email">timpending@gmail.com</span></a>
+          </div>
+        </li>
+      </ul>
+    </aside>
 
     <!-- Menu Activation Button -->
     <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
     <!-- End Side Nav -->
+    <div class="container">
+      <header><h3><i class="small blue-text material-icons">language</i>Add Provider Plan</h3></header>
+      <hr>
+      <form>
+        <section>
+          <h5>1. Providor Plan Name</h5>
+          <p>Text Stuff</p>
+          <label for="plan-name">plan-name</label>
+          <input type="text" name="plan-name" id="plan-name" />
+        </section>
 
-    <aside>TEST</aside>
-    <h1>Hello Worlds</h1>
+        <section>
+          <h5>2. Choose Provider Backing</h5>
+          <p>Text Stuff</p>
+          <p>Insert dropdown</p>
+          <p>Insert 5 boxes</p>
+          <p>Insert Two Other dropdowns</p>
+        </section>
 
+        <section>
+          <h5>3. Governance</h5>
+          <p>Text Stuff</p>
+          <p>Insert Box 1</p>
+          <p>Insert Box 2</p>
+          <p>Check x's for available clouds</p>
+        </section>
+
+        <section>
+          <h5>4. Associate Organization</h5>
+          <p>Text Stuff</p>
+
+        <div class="input-field col s12">
+          <select>
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+          <label for="ao-select">Associate Organization</label>
+        </div>
+      </br>
+        <div class="input-field col s12">
+          <textarea id="ao-description" class="materialize-textarea"></textarea>
+          <label for="ao-description">Description</label>
+        </div>
+        </section>
+
+        <section>
+          <h5>5. Marketplace</h5>
+          <p>Text Stuff</p>
+          <p>form with three toggle switches</p>
+        </section>
+
+        <hr>
+        <h1>Insert Cancel / Submit Button</h1>
+
+      </form>
+    </div>
     <!-- SCRIPT REQUIREMENTS-->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
