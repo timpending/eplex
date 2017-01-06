@@ -1,0 +1,25 @@
+html {
+  background-color: lightgreen;
+}
+
+/* UTILITY CLASS START */
+.inline {
+  display: inline;
+}
+
+.bottom {
+  position:absolute;
+  bottom: 0;
+}
+/* END UTILITY CLASS */
+
+
+/* Side NAV START */
+#slide-out{
+  height:100%;
+}
+
+.side-nav li.active {
+    background-color: rgba(33, 150, 243, .1);
+}
+/* END SIDE NAV */
