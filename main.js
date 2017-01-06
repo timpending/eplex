@@ -28,10 +28,13 @@ $('#submit').on('click', ()=>{
     planObject.catalog2 = $('#catalog2')[0].checked;
     planObject.catalog3 = $('#catalog3')[0].checked;
 
+
     console.log(planObject);
 
-  // ADD GOVERNANCE + Dynamicism
-  // ADD COMPUTE, other select validations (non-nulls)
+// Sets Session Storage to contain builet object
+    for (let char in planObject) {
+      sessionStorage.setItem(char, planObject[char])
+    }
 
   });
 });
