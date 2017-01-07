@@ -12,8 +12,10 @@ $(document).ready(function() {
     $('.button-collapse').sideNav('hide')
   });
 
-// Goverance Logic
 
+
+
+// Goverance Logic
 $('#governance').on('change', () => {
   $('.agent-a').addClass('hidden');
   $('.agent-b').addClass('hidden')
@@ -40,7 +42,6 @@ $('#submit').on('click', ()=>{
     planObject.computeBacking = $('#compute-backing').val();
     planObject.cloudEquiv = $('#cloud-equiv').val();
     planObject.cloudEquivSize = $('#cloud-equiv-size').val();
-    planObject.governance = $('#governance').val();
     planObject.governance = $('#governance').val();
     planObject.agentAItem1 = $('#agent-a-item1')[0].checked.toString();
     planObject.agentAItem2 = $('#agent-a-item2')[0].checked.toString();
